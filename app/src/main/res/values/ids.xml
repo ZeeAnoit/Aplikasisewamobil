@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="molinar" type="id" />
+    <item name="myorder" type="id" />
+    <item name="total_price_textview" type="id" />
+</resources>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backrounnd"
+    tools:context=".Rental">
+
+    <ImageView
+        android:id="@+id/imagerental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="372dp"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rentaltop" />
+
+
+    <ImageView
+        android:id="@+id/shape"
+        android:layout_width="337dp"
+        android:layout_height="443dp"
+        android:background="@drawable/shepsrental"
+        android:backgroundTint="@color/white"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.607" />
+
+    <ImageButton
+        android:id="@+id/serchcar"
+        android:layout_width="200dp"
+        android:layout_height="46dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_shape"
+        android:elevation="3dp"
+        android:text="Search Car"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.629" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="129dp"
+        android:layout_height="25dp"
+        android:elevation="2dp"
+        android:text="Self Drive"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="311dp"
+        android:layout_height="48dp"
+        android:background="@drawable/button_shape"
+        android:backgroundTint="#E3DFDF"
+        android:drawableStart="@drawable/lokasi"
+        android:drawableTint="@color/aww"
+        android:elevation="3dp"
+        android:hint="Makassar"
+        android:paddingLeft="8dp"
+        android:drawablePadding="4dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.361" />
+
+
+    <LinearLayout
+        android:layout_width="338dp"
+        android:layout_height="59dp"
+        android:elevation="3dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.550"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482">
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="144dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="#E3DFDF"
+            android:elevation="3dp"
+            android:drawableStart="@drawable/calender"
+            android:drawableTint="@color/aww"
+            android:hint="DD/MM/YY"
+            android:paddingLeft="8dp"
+            android:drawablePadding="8dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+
+
+        <EditText
+            android:id="@+id/date2"
+            android:layout_width="144dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/button_shape"
+            android:drawableStart="@drawable/date1"
+            android:paddingLeft="8dp"
+            android:drawablePadding="6dp"
+            android:drawableTint="@color/aww"
+            android:backgroundTint="#E3DFDF"
+            android:elevation="3dp"
+            android:hint="10:00"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:text="Search Car"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

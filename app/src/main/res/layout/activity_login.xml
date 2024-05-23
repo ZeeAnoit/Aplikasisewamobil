@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backrounnd"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/image1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutlogin"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_below="@id/imageViewLogo"
+        android:padding="30dp">
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Email"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/Email"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/layoutlogin"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:text="LOGIN"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"/>
+
+    <LinearLayout
+        android:id="@+id/layoutregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/button_login"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Belum Punya Akun ?"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/btndaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Daftar"
+            android:textColor="@color/aww"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

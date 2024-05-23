@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "80767203039",
+    "firebase_url": "https://auth-e5acc-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "auth-e5acc",
+    "storage_bucket": "auth-e5acc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80767203039:android:4af98572b4fa3566c91b6a",
+        "android_client_info": {
+          "package_name": "com.example.aplikasisewamobil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAcjEGqgmM4oo55ixrhEc6_IfFDsNX7pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:80767203039:android:c4e2c2b53f0294bec91b6a",
+        "android_client_info": {
+          "package_name": "com.example.sewamobil"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAcjEGqgmM4oo55ixrhEc6_IfFDsNX7pA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

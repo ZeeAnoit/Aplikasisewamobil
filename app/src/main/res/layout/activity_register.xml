@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backrounnd"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:text="Sing Up"
+        android:textSize="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/register"
+        android:padding="30dp">
+
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Email"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_shape"
+            android:backgroundTint="@color/white"
+            android:hint="Confim Password"
+            android:inputType="textPassword"
+            android:paddingLeft="15dp"
+            android:textColor="@color/black" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button_singup"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/layout1"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="Sing Up"
+        android:textColor="@color/white"
+        android:background="@drawable/button_shape"/>
+
+    <LinearLayout
+        android:id="@+id/punya_akun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/button_singup"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sudah Punya Akun Silahkan"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/login_sudahpunyaakun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Login"
+            android:textColor="@color/aww"
+            android:textSize="12dp"
+            tools:ignore="TextSizeCheck" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

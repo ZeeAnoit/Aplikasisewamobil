@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backrounnd"
+    tools:context=".ui.profil.ProfilFragment">
+
+<View
+android:layout_width="match_parent"
+android:layout_height="120dp"
+android:background="@drawable/shapelagi" />
+
+<ImageView
+android:id="@+id/imageView"
+android:layout_width="350dp"
+android:layout_height="190dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="50dp"
+android:src="@drawable/shape_garispinggir" />
+
+<TextView
+android:id="@+id/editprofil"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignEnd="@id/imageView"
+android:layout_marginTop="65dp"
+android:layout_marginEnd="20dp"
+android:text="EDIT"
+android:textColor="@color/aww" />
+
+<ImageView
+android:id="@+id/fotoprofil"
+android:layout_width="100dp"
+android:layout_height="100dp"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="60dp"
+android:src="@drawable/fotoprofil"
+    android:layout_marginStart="60dp" />
+
+<TextView
+android:id="@+id/emailnya"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_below="@id/fotoprofil"
+android:layout_centerHorizontal="true"
+android:layout_marginTop="20dp"
+    android:text="KLP6@gmail.com"
+    android:textStyle="bold"
+    android:textSize="18sp" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:layout_below="@id/imageView"
+android:orientation="vertical">
+
+<RelativeLayout
+    android:id="@+id/helpbtn"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="70dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shapelagi2" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/help_center"
+        android:backgroundTint="@color/aww" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="90dp"
+    android:text="Help Center"
+    android:textStyle="bold" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/setings"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="30dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shapelagi2" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/settings"
+        android:backgroundTint="@color/aww" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="90dp"
+    android:text="Setting"
+    android:textStyle="bold" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/privasibtn"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="30dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shapelagi2" />
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/privasi_police"
+        android:backgroundTint="@color/aww" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="90dp"
+    android:text="Privasi Police"
+    android:textStyle="bold" />
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/logoutbtn"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:layout_marginTop="30dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/shapelagi2" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="32dp"
+        android:background="@drawable/logout"
+        android:backgroundTint="@color/aww" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="90dp"
+    android:text="Logout"
+    android:textStyle="bold" />
+</RelativeLayout>
+</LinearLayout>
+    </RelativeLayout>

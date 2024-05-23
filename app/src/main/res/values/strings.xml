@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Aplikasisewamobil</string>
+    <string name="title_activity_home">Home</string>
+    <string name="title_home">Home</string>
+    <string name="title_profil">Profil</string>
+    <string name="title_myorder">My Order</string>
+</resources>
