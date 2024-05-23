@@ -20,22 +20,13 @@ android:layout_centerHorizontal="true"
 android:layout_marginTop="50dp"
 android:src="@drawable/shape_garispinggir" />
 
-<TextView
-android:id="@+id/editprofil"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:layout_alignEnd="@id/imageView"
-android:layout_marginTop="65dp"
-android:layout_marginEnd="20dp"
-android:text="EDIT"
-android:textColor="@color/aww" />
 
 <ImageView
 android:id="@+id/fotoprofil"
 android:layout_width="100dp"
 android:layout_height="100dp"
 android:layout_centerHorizontal="true"
-android:layout_marginTop="60dp"
+android:layout_marginTop="70dp"
 android:src="@drawable/fotoprofil"
     android:layout_marginStart="60dp" />
 
