@@ -130,14 +130,14 @@ public class MenuPembayaran2 extends AppCompatActivity {
                 .addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(MenuPembayaran2.this, "Data berhasil disimpan ke Firebase", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuPembayaran2.this, "Pembayaran Berhasil", Toast.LENGTH_SHORT).show();
                         redirectToPaymentDone();
                     }
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(MenuPembayaran2.this, "Gagal menyimpan data ke Firebase", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MenuPembayaran2.this, "Pembayaran Gagal", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

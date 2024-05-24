@@ -1,9 +1,11 @@
 package com.example.aplikasisewamobil.ui.profil;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -13,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.example.aplikasisewamobil.ChangePasswordActivity;
 import com.example.aplikasisewamobil.Login;
 import com.example.aplikasisewamobil.R;
 import com.google.firebase.auth.FirebaseAuth;
@@ -23,6 +26,8 @@ public class ProfilFragment extends Fragment {
 
     private TextView emailTextView;
     private ImageView fotoProfilImageView;
+    private View privasiButton;
+    private View logoutButton;
 
     public ProfilFragment() {
         // Required empty public constructor
@@ -40,13 +45,60 @@ public class ProfilFragment extends Fragment {
         // Temukan ImageView dengan ID fotoprofil
         fotoProfilImageView = view.findViewById(R.id.fotoprofil);
 
-        // Temukan RelativeLayout dengan ID logoutbtn dan tambahkan onClickListener
-        View logoutButton = view.findViewById(R.id.logoutbtn);
+        // Temukan RelativeLayout dengan ID logoutbtn dan tambahkan onTouchListener
+        logoutButton = view.findViewById(R.id.logoutbtn);
+        logoutButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Ubah warna latar belakang menjadi gelap saat tombol ditekan
+                    logoutButton.setBackgroundColor(Color.parseColor("#888888"));
+                    // Lakukan animasi scale down
+                    logoutButton.setScaleX(0.9f);
+                    logoutButton.setScaleY(0.9f);
+                } else if (event.getAction() == MotionEvent.ACTION_UP || event.getAction() == MotionEvent.ACTION_CANCEL) {
+                    // Kembalikan warna latar belakang ke warna semula saat tombol dilepaskan
+                    logoutButton.setBackgroundColor(Color.TRANSPARENT);
+                    // Lakukan animasi scale up
+                    logoutButton.setScaleX(1f);
+                    logoutButton.setScaleY(1f);
+                }
+                return false;
+            }
+        });
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Panggil metode animateLogout dengan animasi saat tombol logout diklik
-                animateLogout(v);
+                // Panggil metode logout saat tombol logout diklik
+                logout();
+            }
+        });
+
+        // Temukan RelativeLayout dengan ID privasibtn dan tambahkan onTouchListener
+        privasiButton = view.findViewById(R.id.privasibtn);
+        privasiButton.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                if (event.getAction() == MotionEvent.ACTION_DOWN) {
+                    // Ubah warna latar belakang menjadi gelap saat tombol ditekan
+                    privasiButton.setBackgroundColor(Color.parseColor("#888888"));
+                    // Lakukan animasi scale down
+                    privasiButton.setScaleX(0.9f);
+                    privasiButton.setScaleY(0.9f);
+                } else if (event.getAction() == MotionEvent.ACTION_UP || event.getAction() == MotionEvent.ACTION_CANCEL) {
+                    // Kembalikan warna latar belakang ke warna semula saat tombol dilepaskan
+                    privasiButton.setBackgroundColor(Color.TRANSPARENT);
+                    // Lakukan animasi scale up
+                    privasiButton.setScaleX(1f);
+                    privasiButton.setScaleY(1f);
+                }
+                return false;
+            }
+        });
+        privasiButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), ChangePasswordActivity.class));
             }
         });
 
@@ -76,40 +128,11 @@ public class ProfilFragment extends Fragment {
         }
     }
 
-    // Metode untuk melakukan logout dengan animasi
-    private void animateLogout(View view) {
-        view.animate()
-                .scaleX(0.9f)
-                .scaleY(0.9f)
-                .alpha(0.7f)
-                .setDuration(150)
-                .withEndAction(new Runnable() {
-                    @Override
-                    public void run() {
-                        view.animate()
-                                .scaleX(1f)
-                                .scaleY(1f)
-                                .alpha(1f)
-                                .setDuration(150)
-                                .withEndAction(new Runnable() {
-                                    @Override
-                                    public void run() {
-                                        logout();
-                                    }
-                                })
-                                .start();
-                    }
-                })
-                .start();
-    }
-
     // Metode untuk melakukan logout
     private void logout() {
         FirebaseAuth.getInstance().signOut();
         // Redirect ke halaman login setelah logout
         startActivity(new Intent(getActivity(), Login.class));
-        if (getActivity() != null) {
-            getActivity().finish();
-        }
+        getActivity().finish();
     }
 }
